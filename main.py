@@ -39,7 +39,7 @@ def check_win_condition(player):
     all_win_states = win1, win2, win3, win4, win5, win6, win7, win8
 
     # get player keys
-    player_positions = [k for k, v in gs.items() if v >= player]
+    player_positions = [k for k, v in gs.items() if v == player]
     for winState in all_win_states:
         counter = 0
         for position in winState:
